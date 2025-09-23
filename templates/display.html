@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Sample Data</h1>
+
+    <table>
+
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Student Class</th>
+            <th>Student Address</th>
+        </tr>
+
+        {% for std in datas %}
+
+        <tr>
+            <td>{{ std.id }}</td>
+            
+            <td>{{ std.student_name }}</td>
+            
+            <td>{{ std.student_class }}</td>
+            
+            <td>{{ std.address }}</td>
+        </tr>
+
+
+        {% endfor %}
+
+    </table>
+
+
+
+</body>
+</html>

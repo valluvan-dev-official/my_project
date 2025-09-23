@@ -1,0 +1,59 @@
+Django Installation
+
+Project Creation
+
+App Creation
+
+Templates & Static Folder Creation 
+
+Project - Integration :
+
+    App Integration
+    Templates Integration
+    Static Integration
+
+
+Working in  Views.py :
+
+    create a view
+
+Working in Templates-Folder :
+
+    create a new Templates --> index.html
+
+    enter sample html code 
+
+Working in URLS.py :
+
+    import views in URLS 
+
+    create a new URL 
+
+Run Development Server :
+
+    Execute the first application in django 
+
+
+
+Working in Models.py :
+
+    Create a New Models
+
+    run command -> python manage.py makemigrations
+
+    run command -> python manage.py migrate
+
+
+Working in Admin.py :
+
+    import models in admin.py
+
+    Register the models
+
+
+Create a Admin - Superuser :
+
+
+    run command -> python manage.py createsuperuser
+
+    then run development Server
