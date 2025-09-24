@@ -1,0 +1,10 @@
+h1{
+    background-color: aquamarine;
+    color: maroon;
+}
+
+table,tr,th,td{
+    border: 2px solid rgb(212, 23, 23);
+    border-collapse: collapse;
+    padding: 10px;
+}

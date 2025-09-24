@@ -57,3 +57,29 @@ Create a Admin - Superuser :
     run command -> python manage.py createsuperuser
 
     then run development Server
+
+
+
+============= Jinja Tags =============
+
+
+1. Variable Tag : {{ }}
+
+    Python la irukura value ah HTML la Display panna use aaguthu
+
+
+
+2. If Condition :  {% if condition %}  {% else %}  {% endif %}
+
+    Condition check panna 
+
+
+3. For Loop : {% for %} {% endfor %}
+
+    list/dictionary  iterate panna
+
+
+
+
+
+

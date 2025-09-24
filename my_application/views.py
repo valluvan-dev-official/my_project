@@ -15,3 +15,11 @@ def display(request):
 
     return render(request,"display.html",{"datas":data})
 
+
+
+def Jinja_view(request):
+
+    fruits = ["apple","Orange","MAngo","Banana"]
+
+    return render(request, "jinja.html",{"name":"Hari","age":23,"snakcs" : fruits})
+
