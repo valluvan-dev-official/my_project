@@ -89,3 +89,21 @@ Create a Admin - Superuser :
     small HTML piece(partial ) add panna
 
 
+
+6. Comment :
+
+    {# #} - Jinja Comment 
+
+
+
+7. Filter :  | filtername
+
+    Modify Variable Values
+
+
+8. Static files - {% static %}
+
+    load css ,js or images
+
+
+9. URL Tag - {% url %}
