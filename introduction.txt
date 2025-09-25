@@ -79,7 +79,13 @@ Create a Admin - Superuser :
     list/dictionary  iterate panna
 
 
+4. Template Inheritance(extends / block) :
+
+    Re-usable Template Structure
 
 
+5. Include Tag : {% include %} 
+
+    small HTML piece(partial ) add panna
 
 

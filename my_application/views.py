@@ -23,3 +23,8 @@ def Jinja_view(request):
 
     return render(request, "jinja.html",{"name":"Hari","age":23,"snakcs" : fruits})
 
+
+def extends_view(request):
+
+
+    return render(request,"home.html")

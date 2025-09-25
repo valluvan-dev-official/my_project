@@ -25,4 +25,5 @@ urlpatterns = [
     path("",views.home,name = "home_main"),
     path("show/",views.display,name ="show"),
     path("jinja/",views.Jinja_view,name="jinja"),
+    path("home/",views.extends_view,name="home"),
 ]

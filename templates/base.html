@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   {% block Header %}
+
+    <h1>This Common Header</h1>
+
+   {% endblock %}
+
+   <!-- Include tag -->
+
+   {% include "menu.html" %}
+
+
+
+   {% block Content %}
+
+    <table>
+        <tr>
+            <th>NAme</th>
+            <th>Address</th>
+            <th>Phone No</th>
+        </tr>
+
+        <tr>
+            <td>MAni</td>
+            <td>Chennai</td>
+            <td>12345</td>
+        </tr>
+
+        
+        <tr>
+            <td>MAni</td>
+            <td>Chennai</td>
+            <td>12345</td>
+        </tr>
+
+        
+        <tr>
+            <td>MAni</td>
+            <td>Chennai</td>
+            <td>12345</td>
+        </tr>
+
+    </table>
+
+    {% endblock %}
+
+    {% block newone %}
+
+        <h1>welcomre to one</h1>
+
+    {% endblock %}
+
+
+
+    {% block Footer %}
+
+        <h1>This is Common Footer</h1>
+
+    {% endblock %}
+
+</body>
+</html>
