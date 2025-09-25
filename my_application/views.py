@@ -28,3 +28,17 @@ def extends_view(request):
 
 
     return render(request,"home.html")
+
+
+
+def regroup_jinja(request):
+
+    books = [
+        {"title": "Python Basics", "category": "Programming"},
+        {"title": "Django Mastery", "category": "Programming"},
+        {"title": "React Guide", "category": "Web Development"},
+        {"title": "HTML & CSS", "category": "Web Development"},
+        {"title": "Data Science 101", "category": "Data Science"},
+    ]
+
+    return render(request,"regroup.html",{"Books" : books})

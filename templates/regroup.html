@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Regroup -->
+
+
+    <h2>Library Books</h2>
+
+
+    {% regroup Books by category as grouped_books %}
+
+        <ul>
+
+            {% for group in grouped_books %}
+
+            <li>
+                <strong>{{ group.grouper }}</strong>
+                
+                <ul>
+                    {% for book in group.list %}
+
+                    <li>{{ book.title }}</li>
+
+                    {% endfor %}
+                </ul>
+                
+            </li>
+            
+            {% endfor %}
+
+        </ul>
+
+
+
+
+    
+</body>
+</html>

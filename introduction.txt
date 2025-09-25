@@ -107,3 +107,13 @@ Create a Admin - Superuser :
 
 
 9. URL Tag - {% url %}
+
+
+10. Now - {% now %}
+
+    show current data/time
+
+
+11. regroup :
+
+    {% regroup list by field as new_variable %}

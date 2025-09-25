@@ -26,4 +26,5 @@ urlpatterns = [
     path("show/",views.display,name ="show"),
     path("jinja/",views.Jinja_view,name="jinja"),
     path("home/",views.extends_view,name="home"),
+    path("regroup/",views.regroup_jinja,name="regroup"),
 ]
