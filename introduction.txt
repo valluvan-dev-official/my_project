@@ -117,3 +117,15 @@ Create a Admin - Superuser :
 11. regroup :
 
     {% regroup list by field as new_variable %}
+
+
+
+
+
+=============== Django Forms =================
+
+
+Types of Django Forms :
+
+1. Normal Form (forms.Form)
+2, Model Form (forms.ModelForm)

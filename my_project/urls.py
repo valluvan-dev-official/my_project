@@ -27,4 +27,6 @@ urlpatterns = [
     path("jinja/",views.Jinja_view,name="jinja"),
     path("home/",views.extends_view,name="home"),
     path("regroup/",views.regroup_jinja,name="regroup"),
+    path("login/",views.html_form,name="login"),
+    path("django_form/",views.django_normal_form,name="django_form"),
 ]
