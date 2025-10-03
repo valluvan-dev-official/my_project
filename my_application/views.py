@@ -1,9 +1,7 @@
-from math import e
-import re
 from django.http import HttpResponse
-from django.shortcuts import render
-from .models import Sample_data
-from .forms import Contact_Form
+from django.shortcuts import render,redirect
+from .models import Sample_data,Student
+from .forms import Contact_Form,Student_Form
 
 # Create your views here.
 
@@ -53,9 +51,7 @@ def html_form(request):
     if request.method == "POST":
 
         print("-------- Request ------",request)
-
         print("-------- Method -------",request.method)
-
         print("-------- Username -------",request.POST.get("username"))
         print("-------- Password -------",request.POST.get("password"))
 
@@ -63,16 +59,12 @@ def html_form(request):
         pass_word = request.POST.get("password")
 
         if user_name == "admin" and pass_word == "1234":
-
             return render(request,"Login_success.html",{"user" : user_name})
         
         else:
-
             return render(request,"login.html",{"Error" : "Invalid Credentials"})
 
     return render(request,"login.html")
-
-
 
 
 def django_normal_form(request):
@@ -80,11 +72,8 @@ def django_normal_form(request):
     C_form = Contact_Form()
 
     if request.method == "POST":
-
         form = Contact_Form(request.POST)
-
         print(form)
-
 
         if form.is_valid():
 
@@ -99,3 +88,21 @@ def django_normal_form(request):
             return HttpResponse("Invalid Data")
 
     return render(request,"contact.html",{"form":C_form})
+
+
+# django model form :
+
+def student_register(request):
+
+    form = Student_Form()
+
+    if request.method == "POST":
+
+        form = Student_Form(request.POST)
+        
+        if form.is_valid():
+            form.save()
+            return redirect("home_main")
+            
+
+    return render(request,"student_register.html",{"Form":form})
